@@ -1,0 +1,68 @@
+body{
+    background-color:mistyrose;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+     /* Garante que o body ocupe toda a altura da janela */
+    margin: 0;
+}
+
+.corpo {
+    background-color: pink;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    padding: 2%;
+    text-decoration: underline 3px; 
+}
+
+h2{
+    font-size: 35px;
+}
+
+input {
+    border-radius: 5px;
+    background-color: mistyrose;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    width:100% ;
+}
+
+input{
+    width: 30%;
+    height: 25px;
+    margin: 3%;
+}
+
+#enviar{
+    width: 10%;
+}
+
+table{
+    margin-top: 3%;
+}
+
+td{
+   text-align: center ;
+}
+
+tr{
+    padding: 2%;
+}
+
+.pesquisa{
+    padding: 1%;    
+}

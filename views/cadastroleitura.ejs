@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Mulheres no Mercado de trabalho</title>
+</head>
+<body>
+
+    <h1>Mulheres no Mercado de Trabalho</h1>
+    
+    <div class="corpo">
+    <h2>Cadastro</h2>
+    <form action="/" method="post">
+        <input type="text" name="nome" placeholder="Insira o seu nome " required><br><br>   
+        <input type="text" name="sobrenome" placeholder="Insira o seu sobrenome" required><br><br>     
+        <input type="email" name="email" placeholder="Insira o seu e-mail" required><br><br>
+        <input type="text" name="paragrafo" placeholder="Insira seu texto" required><br><br>
+
+        <input id="enviar" type="submit" value="Enviar">
+    
+    </form>
+
+    
+    <h2>Lista de Pesquisadores</h2>
+    <table border="1" width = "100%">
+        <tr>
+            <th>Código</th>
+            <th>Nome</th>
+            <th>Sobrenome</th>
+            <th>E-mail</th>
+            <th>Pesquisa</th>
+        </tr>
+
+        <% if (pesquisadores.length > 0) { %>
+            <% for(let i = 0; i < pesquisadores.length; i++) { %>
+                <tr>
+
+                    <td><%=pesquisadores[i].id %></td>
+                    <td><%=pesquisadores[i].nome %></td>
+                    <td><%=pesquisadores[i].sobrenome %></td>
+                    <td><%=pesquisadores[i].email %></td>
+                    <td class="pesquisa"><%=pesquisadores[i].paragrafo %></td>
+
+                </tr>
+            <% } %>
+
+        <% } else { %>
+                    <h2>Não temos pesquisadores no Banco de Dados!</h2>
+        <% } %> 
+    </table>
+    </div>
+
+</body>
+</html>
