@@ -5,7 +5,7 @@ var mysql = require('mysql');
 var conecteBanco = mysql.createConnection({
     host: "localhost", // Especifica o host do banco de dados (neste caso, o servidor local)
     user: "root", // Nome de usuário para acessar o banco de dados (neste caso, 'root')
-    password: "", // Senha para acessar o banco de dados (vazia neste exemplo)
+    password: "", // Senha para acessar o banco de dados (vazia neste caso)
     database: "trabalhofeminino" // Nome do banco de dados ao qual queremos nos conectar
 });
 
