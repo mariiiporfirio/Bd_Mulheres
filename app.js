@@ -26,7 +26,7 @@ conexao.connect(function(error) {
     if (error) {
         throw error; // Lança um erro caso não consiga conectar
     }
-    console.log('Conexão com o banco de dados estabelecida');
+    console.log(`Conexão com o banco de dados estabelecida`);
 });
 
 app.get('/', function(req, res){
@@ -67,5 +67,7 @@ app.post('/', function(req, res){
 });    
 
 
-// Configura o servidor para rodar na porta 5000
-app.listen(7000);
+// Configura o servidor para rodar na porta 7000
+let porta = app.listen(7000, () => {
+    console.log(`Servidor rodando na porta ${porta.address().port}!`);
+});
