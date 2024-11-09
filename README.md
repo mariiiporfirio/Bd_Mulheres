@@ -5,3 +5,4 @@
 • Mysql<br>
 • EJS<br>
 • Body-Parser<br>
+• Nodemon<br>
