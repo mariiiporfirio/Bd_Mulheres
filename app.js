@@ -26,7 +26,7 @@ conexao.connect(function(error) {
     if (error) {
         throw error; // Lança um erro caso não consiga conectar
     }
-    console.log(`Conexão com o banco de dados estabelecida`);
+    console.log(`Conexão com o banco de dados estabelecida.`);
 });
 
 app.get('/', function(req, res){
