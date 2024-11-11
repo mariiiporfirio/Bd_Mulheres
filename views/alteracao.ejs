@@ -55,22 +55,6 @@
                     <h2>Não temos pesquisadores no Banco de Dados!</h2>
         <% } %> 
     </table>
-
-    <h2>Alteração de Cadastro</h2>
-    <form action="/" method="post">
-
-        <div class="campos">
-            <input type="hidden" name="id" value="<%= pesquisadores.id %>">
-            <input type="text" name="nome" placeholder="Insira o seu nome " required><br><br>
-            <input type="text" name="sobrenome" placeholder="Insira o seu sobrenome" required><br><br>
-            <input type="email" name="email" placeholder="Insira o seu e-mail" required><br><br>
-            <input type="text" name="paragrafo" placeholder="Insira seu texto" required><br><br>
-        </div>
-
-        <input id="enviar" type="submit" value="Alterar">
-    
-    </form>
-
     </div>
 
 </body>

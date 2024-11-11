@@ -74,3 +74,8 @@ tr{
 .pesquisa{
     padding: 1%;    
 }
+
+.acoes {
+    position: absolute;
+    width: 220px;
+}
