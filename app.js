@@ -66,6 +66,16 @@ app.post('/', function(req, res){
         
 });    
 
+app.get('delete-pesquisadores', function(req, res) {
+    var sql = "delete from estudante where id=?";
+    var id = req.query.id;
+
+    conexao.query(sql, [id], function(error, result) {
+        if(error) console.log(error);
+        res.redirect('/');
+    });
+});
+
 
 // Configura o servidor para rodar na porta 7000
 let porta = app.listen(7000, () => {

@@ -69,6 +69,7 @@ td{
 
 tr{
     padding: 2%;
+
 }
 
 .pesquisa{
@@ -77,5 +78,5 @@ tr{
 
 .acoes {
     position: absolute;
-    width: 220px;
+    width: 213px;
 }
